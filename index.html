@@ -3,6 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Instant Replies for Car Services</title>
 
   <style>
     * {
@@ -17,26 +18,32 @@
       min-height: 100vh;
       background: linear-gradient(135deg, #0f172a, #020617);
       color: #e5e7eb;
-      padding: 24px;
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      padding: 24px;
     }
 
     .container {
       max-width: 720px;
+      width: 100%;
       background: rgba(255, 255, 255, 0.04);
       border-radius: 18px;
       padding: 48px 40px;
       backdrop-filter: blur(10px);
       box-shadow: 0 20px 60px rgba(0, 0, 0, 0.45);
+    }
+
+    h1 {
+      font-size: 40px;
       line-height: 1.2;
+      margin-bottom: 16px;
     }
 
     p {
       font-size: 18px;
+      margin-bottom: 18px;
       color: #cbd5f5;
-      margin-bottom: 16px;
     }
 
     .highlight {
@@ -46,11 +53,11 @@
 
     .demo-box {
       margin-top: 32px;
+      padding: 20px;
+      border-radius: 14px;
       background: rgba(56, 189, 248, 0.08);
       border: 1px solid rgba(56, 189, 248, 0.25);
       text-align: center;
-      padding: 16px;
-      border-radius: 12px;
     }
 
     .demo-box p {
@@ -59,9 +66,11 @@
       color: #e0f2fe;
     }
 
-    .demo-box span {
+    footer {
+      margin-top: 32px;
       font-size: 14px;
       color: #94a3b8;
+      text-align: center;
     }
   </style>
 </head>
@@ -83,14 +92,27 @@
 
     <div class="demo-box">
       <p>👉 Try the chat in the bottom-right corner and see how it works.</p>
-      <span>
-        Want this on your website or Instagram?<br />
-        Just send a message.
-      </span>
     </div>
+
+    <footer>
+      Want this on your website or Instagram?<br />
+      Just send a message.
+    </footer>
   </div>
+
+  <!-- CRISP CHAT SCRIPT -->
+  <script type="text/javascript">
+    window.$crisp=[];
+    window.CRISP_WEBSITE_ID="fbdae5fc-2398-4968-954e-2e3a8156a2c3";
+    (function(){
+      var d=document;
+      var s=d.createElement("script");
+      s.src="https://client.crisp.chat/l.js";
+      s.async=1;
+      d.getElementsByTagName("head")[0].appendChild(s);
+    })();
+  </script>
 
 </body>
 </html>
-
 
